@@ -1,10 +1,12 @@
 [ignore]
 .*/node_modules/styled-components/.*
+.*/flow-typed/npm/.*
 
 [include]
 .*/src/.*
 
 [libs]
+.*/flow-typed/.*
 
 [lints]
 
@@ -15,6 +17,8 @@ module.file_ext=.json
 module.file_ext=.css
 module.file_ext=.scss
 module.name_mapper='.*\(.s?css\)' -> 'css-module-flow'
+module.name_mapper='^@comp/\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^@/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
 esproposal.decorators=ignore
 module.system=haste
 
