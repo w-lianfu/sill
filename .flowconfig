@@ -1,0 +1,21 @@
+[ignore]
+.*/node_modules/styled-components/.*
+
+[include]
+.*/src/.*
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.css
+module.file_ext=.scss
+module.name_mapper='.*\(.s?css\)' -> 'css-module-flow'
+esproposal.decorators=ignore
+module.system=haste
+
+[strict]
