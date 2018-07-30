@@ -3,16 +3,16 @@ import * as React from 'react';
 
 import Nav from '@/common/components/nav';
 
-class My extends React.Component<{}> {
+class Discover extends React.Component<{}> {
   render() {
     return (
       <div>
-        <h2>My Page...</h2>
+        <h2>Discover Page...</h2>
 
-        <Nav name="my" />
+        <Nav name="discover" />
       </div>
     )
   }
 }
 
-export default My;
+export default Discover;

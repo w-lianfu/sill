@@ -8,8 +8,9 @@ class Home extends React.Component<{}> {
     return (
       <div>
         <h3>Home Page...</h3>
+        <i className="iconfont icon-home"></i>
 
-        <Nav />
+        <Nav name="home" />
       </div>
     )
   }
