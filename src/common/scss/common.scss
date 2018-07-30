@@ -1,9 +1,30 @@
 @import './color.scss';
 
-a {
-  text-decoration: none;
+#root {
+  max-width: 600px;
+  display: flex;
+  flex: 1;
+}
+
+a { text-decoration: none; }
+button { cursor: pointer; }
+
+button, input, textarea {
+  &:focus { outline: none; }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .none { display: none; }
 .hidden { visibility: hidden; }
 .visible { visibility: visible;}
+.bold { font-weight: 500; }

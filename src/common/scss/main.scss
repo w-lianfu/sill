@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  // touch-action: none;
 }
 
 html {
@@ -9,6 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
+  touch-action: none;
 }
 
 body {
@@ -23,8 +25,4 @@ body {
 ::selection {
   background-color: $sred;
   color: $fff;
-}
-
-#root {
-  max-width: 800px;
 }

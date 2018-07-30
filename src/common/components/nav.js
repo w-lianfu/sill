@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, IconButton, Icon } from '@material-ui/core';
+import { Button, Icon } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 
@@ -15,7 +15,7 @@ const styles = theme => ({
     minHeight: 'auto',
   },
   iconRoot: {
-    fontSize: '45px'
+    fontSize: '37px'
   }
 });
 
@@ -25,6 +25,11 @@ type Props = {
 };
 
 class Nav extends React.Component<Props> {
+
+  onAdd = () => {
+    console.log('hi');
+  }
+
   render() {
     const { name, classes } = this.props;
     return (
@@ -39,11 +44,13 @@ class Nav extends React.Component<Props> {
           <i className={[name === "message" ? "" : "none", "iconfont icon-message-fill"].join(" ")}></i>
           <label>消息</label>
         </Link>
-        <Link to="/">
-          <Button color="secondary" size="large" className={classNames(classes.buttonRoot)}>
-            <Icon className={classNames(classes.iconRoot)}>add_box</Icon>
+        <div>
+          <Button variant="contained" color="secondary" size="large"
+            className={classNames(classes.buttonRoot)} disableRipple={true}
+            onClick={this.onAdd.bind(this)}>
+            <Icon className={classNames(classes.iconRoot)}>add</Icon>
           </Button>
-        </Link>
+        </div>
         <Link to="/discover" className={name === "discover" ? "active" : ""}>
         <i className={[name === "discover" ? "none" : "", "iconfont icon-compass"].join(" ")}></i>
         <i className={[name === "discover" ? "" : "none", "iconfont icon-compass-fill"].join(" ")}></i>

@@ -3,16 +3,18 @@ import styled from 'styled-components';
 
 import COLOR from './color';
 
-const SNav = styled.nav`
+const SNav = styled.div`
   width: 100%;
+  max-width: 600px;
+  min-width: 320px;
   height: 46px;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: auto;
   display: flex;
   border-top: 1px solid ${COLOR.eee};
 
-  a {
+  a, div {
     flex: 1;
     display: flex;
     align-items: center;
