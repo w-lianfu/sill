@@ -1,18 +1,36 @@
 @import '@/common/scss/color.scss';
 
 .hot {
-  .hot-header-list {
+  .hot-header {
     height: 2.2rem;
-    margin: 0;
-    padding: 0;
     display: flex;
-    overflow: auto;
-    background: $eee;
+    position: relative;
 
-    button {
-      font-size: 0.8rem;
+    .hot-header-list {
+      height: 100%;
+      margin: 0 2rem 0 0;
+      padding: 0;
+      display: flex;
+      overflow: auto;
+      background: $eee;
 
-      &.active { color: $sred; }
+      button {
+        font-size: 0.8rem;
+        padding: 0 0.5rem;
+
+        &.active { color: $sred; }
+      }
+    }
+    span {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: $fff;
+      box-shadow: -2px 0px 3px $aaa;
     }
   }
 }
