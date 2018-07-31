@@ -26,14 +26,15 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- <script>
+    <script>
       // 字体自适应
       (function flexible(window, document) {
         function setBodyFontSize () {
           if (document.body) {
-            let bodyWidth = document.body.clientWidth;
-            if (bodyWidth > 460) bodyWidth = 460;
-            document.body.style.fontSize = bodyWidth * 4/100 + 'px';
+            let html = document.getElementsByTagName('html')[0];
+            let htmlWidth = html.clientWidth;
+            if (htmlWidth > 460) htmlWidth = 460;
+            html.style.fontSize = htmlWidth * 4/90 + 'px';
           } else {
             document.addEventListener('DOMContentLoaded', setBodyFontSize);
           }
@@ -42,6 +43,6 @@
 
         window.addEventListener('resize', setBodyFontSize);
       })(window, document);
-    </script> -->
+    </script>
   </body>
 </html>

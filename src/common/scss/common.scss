@@ -2,6 +2,7 @@
 
 #root {
   max-width: 600px;
+  min-width: 320px;
   display: flex;
   flex: 1;
 }
@@ -30,4 +31,10 @@ ul {
 .none { display: none; }
 .hidden { visibility: hidden; }
 .visible { visibility: visible;}
-.bold { font-weight: 500; }
+.bold { font-weight: bold; }
+
+button {
+  border: 0;
+  background: none;
+  white-space: nowrap;
+}

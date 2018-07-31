@@ -11,7 +11,7 @@ import color from './color';
 
 const HomeTopComp = styled.ul`
   width: 100%;
-  height: 44px;
+  height: 2.6rem;
   display: flex;
   border-bottom: 1px solid ${color.eee};
 

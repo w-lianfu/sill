@@ -7,7 +7,7 @@ const SNav = styled.div`
   width: 100%;
   max-width: 600px;
   min-width: 320px;
-  height: 46px;
+  height: 50px;
   position: fixed;
   bottom: 0;
   left: auto;
@@ -26,7 +26,7 @@ const SNav = styled.div`
       color: ${COLOR.sred};
     }
 
-    i { font-size: 24px; line-height: 1; }
+    i { font-size: 25px; line-height: 1; }
     label {
       font-size: 12px;
       line-height: 1;

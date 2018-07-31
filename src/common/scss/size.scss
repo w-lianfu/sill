@@ -1,71 +1,50 @@
-$size12: 12px;
-$size13: 13px;
-$size14: 14px;
-$size15: 15px;
-$size16: 16px;
-$size17: 17px;
-$size18: 18px;
-$size19: 19px;
-$size20: 20px;
-$size21: 21px;
-$size22: 22px;
-$size23: 23px;
-$size24: 24px;
-$size25: 25px;
-$size26: 26px;
-$size27: 27px;
-$size28: 28px;
-$size29: 29px;
-$size30: 30px;
+$rem06: 0.6rem;
+$rem07: 0.7rem;
+$rem08: 0.8rem;
+$rem09: 0.9rem;
+$rem10: 1.0rem;
+$rem11: 1.1rem;
+$rem12: 1.2rem;
+$rem13: 1.3rem;
+$rem14: 1.4rem;
+$rem15: 1.5rem;
+$rem16: 1.6rem;
+$rem17: 1.7rem;
+$rem18: 1.8rem;
+$rem19: 1.9rem;
+$rem20: 2.0rem;
 
-$h20: 20px;
-$h30: 30px;
-$h40: 40px;
-$h44: 44px;
-$h50: 50px;
-$h60: 60px;
-$h70: 70px;
-$h80: 80px;
-$h90: 90px;
-$h100: 100px;
+$rem30: 3rem;
+$rem40: 4rem;
+$rem50: 5rem;
+$rem60: 6rem;
+$rem70: 7rem;
+$rem80: 8rem;
+$rem90: 9rem;
+$rem100: 10rem;
 
-$height50: 50%;
-$height100: 100%;
-$width50: 50%;
-$width100: 100%;
+.rem06 { font-size: 0.6rem; }
+.rem07 { font-size: 0.7rem; }
+.rem08 { font-size: 0.8rem; }
+.rem09 { font-size: 0.9rem; }
+.rem10 { font-size: 1.0rem; }
+.rem11 { font-size: 1.1rem; }
+.rem12 { font-size: 1.2rem; }
+.rem13 { font-size: 1.3rem; }
+.rem14 { font-size: 1.4rem; }
+.rem15 { font-size: 1.5rem; }
+.rem16 { font-size: 1.6rem; }
+.rem17 { font-size: 1.7rem; }
+.rem18 { font-size: 1.8rem; }
+.rem19 { font-size: 1.9rem; }
+.rem20 { font-size: 2.0rem; }
+.rem30 { font-size: 3.0rem; }
+.rem40 { font-size: 4.0rem; }
+.rem50 { font-size: 5.0rem; }
+.rem60 { font-size: 6.0rem; }
+.rem70 { font-size: 7.0rem; }
 
-.size12 { font-size: $size12; }
-.size13 { font-size: $size13; }
-.size14 { font-size: $size14; }
-.size15 { font-size: $size15; }
-.size16 { font-size: $size16; }
-.size17 { font-size: $size17; }
-.size18 { font-size: $size18; }
-.size19 { font-size: $size19; }
-.size20 { font-size: $size20; }
-.size21 { font-size: $size21; }
-.size22 { font-size: $size22; }
-.size23 { font-size: $size23; }
-.size24 { font-size: $size24; }
-.size25 { font-size: $size25; }
-.size26 { font-size: $size26; }
-.size27 { font-size: $size27; }
-.size28 { font-size: $size28; }
-.size29 { font-size: $size29; }
-.size30 { font-size: $size30; }
-
-.h20 { height: $h20; }
-.h30 { height: $h30; }
-.h40 { height: $h40; }
-.h44 { height: $h44; }
-.h50 { height: $h50; }
-.h60 { height: $h60; }
-.h70 { height: $h70; }
-.h80 { height: $h80; }
-.h90 { height: $h90; }
-.h100 { height: $h100; }
-
-.height50 { width: $height50; }
-.height100 { width: $height100; }
-.width50 { width: $width50; }
-.width100 { width: $width100; }
+.height50 { height: 50%; }
+.height100 { height: 100%; }
+.width50 { width: 50%; }
+.width100 { width: 100%; }

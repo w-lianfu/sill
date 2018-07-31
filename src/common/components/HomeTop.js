@@ -20,25 +20,25 @@ class HomeTop extends React.Component<{}, State> {
       <HomeTopComp>
         <li>
           <FlexBox>
-            <i className="iconfont icon-camera size26"></i>
+          <i className="iconfont icon-camera"></i>
           </FlexBox>
         </li>
         <li>
-          <SillButton height="41px"
+          <SillButton height="rem30"
             onClick={this.changeTitle.bind(this, "follow")}
-            className={[title === "follow" ? "active" : "", "bold size16"].join(" ")}>
+            className={[title === "follow" ? "active" : "", "bold rem10"].join(" ")}>
             关注
             {/*<i className="iconfont icon-dot"></i>*/}
           </SillButton>
-          <SillButton height="41px"
+          <SillButton height="rem30"
             onClick={this.changeTitle.bind(this, "hot")}
-            className={[title === "hot" ? "active" : "", "bold size16"].join(" ")}>
+            className={[title === "hot" ? "active" : "", "bold rem10"].join(" ")}>
             热门
           </SillButton>
         </li>
         <li>
           <FlexBox>
-            <i className="iconfont icon-scan size26"></i>
+            <i className="iconfont icon-scan"></i>
           </FlexBox>
         </li>
       </HomeTopComp>
