@@ -13,26 +13,43 @@ const HomeTopComp = styled.ul`
   width: 100%;
   height: 44px;
   display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid ${color.eee};
+
+  li {
+    flex: 1;
+    display: flex;
+
+    &:nth-child(2) {
+      justify-content: center;
+    }
+    &:last-child {
+      justify-content: flex-end;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
 `;
 
 const FlexBox = styled.div`
-  width: ${props => props.width ? props.width : '100%'};
   height: ${props => props.height ? props.height : '100%'};
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 const SillButton = styled.button`
-  width: ${props => props.width ? props.width : '100%'};
   height: ${props => props.height ? props.height : '100%'};
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
-  margin-right: 10px;
   border: none;
   background: none;
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +58,15 @@ const SillButton = styled.button`
 
   &.active {
     border-bottom: 3px solid ${color.sred};
+  }
+
+  i {
+    position: absolute;
+    right: -6px;
+    top: 2px;
+    transform: scale(0.5);
+    font-size: 12px;
+    color: ${color.sred};
   }
 `;
 

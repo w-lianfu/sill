@@ -94,6 +94,7 @@
   },
   "devDependencies": {
     "@material-ui/core": "^1.4.1",
+    "@material-ui/icons": "^2.0.0",
     "css-module-flow": "^1.0.0",
     "flow-bin": "^0.77.0",
     "immutable": "^3.8.2",

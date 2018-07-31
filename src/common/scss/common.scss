@@ -6,7 +6,10 @@
   flex: 1;
 }
 
-a { text-decoration: none; }
+a {
+  color: $c000;
+  text-decoration: none;
+}
 button { cursor: pointer; }
 
 button, input, textarea {

@@ -9,7 +9,7 @@ type State = {
 
 class HomeTop extends React.Component<{}, State> {
   state = {
-    title: "follow"
+    title: "hot"
   }
 
   changeTitle = (newTitle: string) => this.setState({ title: newTitle });
@@ -19,24 +19,25 @@ class HomeTop extends React.Component<{}, State> {
     return (
       <HomeTopComp>
         <li>
-          <FlexBox width="44px">
+          <FlexBox>
             <i className="iconfont icon-camera size26"></i>
           </FlexBox>
         </li>
         <li>
-          <SillButton width="44px" height="41px"
+          <SillButton height="41px"
             onClick={this.changeTitle.bind(this, "follow")}
-            className={[title === "follow" ? "active" : "", "bold size17"].join(" ")}>
+            className={[title === "follow" ? "active" : "", "bold size16"].join(" ")}>
             关注
+            {/*<i className="iconfont icon-dot"></i>*/}
           </SillButton>
-          <SillButton width="44px" height="41px"
+          <SillButton height="41px"
             onClick={this.changeTitle.bind(this, "hot")}
-            className={[title === "hot" ? "active" : "", "bold size17"].join(" ")}>
+            className={[title === "hot" ? "active" : "", "bold size16"].join(" ")}>
             热门
           </SillButton>
         </li>
         <li>
-          <FlexBox width="44px">
+          <FlexBox>
             <i className="iconfont icon-scan size26"></i>
           </FlexBox>
         </li>
